@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title> <!-- titulo -->
+<link rel="stylesheet" href="css/normalize.css"> <!-- enlace a css -->
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> <!-- url google fonts tipo de fuente -->
+<link rel="stylesheet" href="css/styles.css"> <!-- enlace a hoja de estilos -->
+</head>
+<body> <!-- dentro de body va nuestro codigo -->
+    
+    <header class="header"> <!-- se agrego class para bloque como header --> <!-- BLOQUE -->
+<a href="index.html"> <!-- regresa a pagina principal -->
+    <img class="header__logo" src="img/logo.png" alt="Logotipo"> <!-- atributo obligatorio para imagenes --> <!-- ELEMENTO -->
+
+</a>
+
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo"  href="index.html">Tienda</a>    <!-- enlaces --> <!-- egragamos clase a los elementos de navegacion para su codigo en css --> <!-- MODIFICADOR CON -- -->
+        <a class="navegacion__enlace"  href="nostros.html">Nosotros</a> <!-- enlaces -->
+  </nav>
+
+<main class="contenedor">  
+    <h1>React JS</h1>
+
+    <div class="camisa"> <!-- descricpion del producto --> <!-- elemento 1 -->
+        <img class="camisa__imagen" src="img/3.jpg" alt="Imagen de Producto">
+    
+        <div class="camisa__contenido">
+            <p>
+                Maecenas consectetur ultricies mi vel venenatis. Curabitur risus tellus, congue non tellus at, semper dapibus turpis. 
+                Duis pellentesque, risus sit amet placerat porttitor, tortor augue volutpat ante, non dignissim odio ligula at arcu.
+
+                <form class="formulario"> <!-- titulo --> <!-- elemnto 2 de camisa con vinculo a su formulario -->
+<select class="formulario__campo"> 
+    <option disabled selected>-- Seleccionar Talla --</option> <!-- desabilita el que se pueda seleccionar el "seleccionar talla" -->
+    <option>Chica</option>
+    <option>Mediana</option>
+    <option>Grande</option>
+</select>
+<input class="formulario__campo"  type="number" placeholder="Cantidad" min="1"> <!-- cantidad de camisas a pedir "number" solo acepta numeros min="1" hace referencia a que minimo una -->
+<input class="formulario__submit" type="submit" value="Agregar al carrito"> <!-- boton de agregar al carrito -->
+
+            </p>
+        </div>
+    
+    </div> 
+</main>
+
+
+<footer class="footer">
+    <p class="footer__texto">Front End Store - Todos los derechos reservados 2021</p> <!-- eelemento de bloque con __ -->
+</footer>
+
+
+    </body>
+</html>
